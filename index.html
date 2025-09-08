@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Pokédex</title>
+  <link rel="stylesheet" href="./main.css">
+</head>
+<body>
+  <div class="container">
+    <img src="https://upload.wikimedia.org/wikipedia/commons/9/98/International_Pokémon_logo.svg" alt="pokemon-logo" class="logo">
+
+    <div class="controls">
+      <input type="text" id="searchInput" placeholder="Search your pokemon">
+      <select id="typeFilter">
+        <option value="all">All</option>
+        <option value="Grass">Grass</option>
+        <option value="Poison">Poison</option>
+        <option value="Fire">Fire</option>
+        <option value="Water">Water</option>
+        <option value="Electric">Electric</option>
+      </select>
+      <select id="sortSelect">
+        <option value="az">A - Z</option>
+        <option value="za">Z - A</option>
+      </select>
+      <button id="searchBtn">Search</button>
+    </div>
+
+    <div id="pokemonList" class="pokemon-list"></div>
+  </div>
+
+  <script src="./pokemons.js"></script>
+  <script src="./main.js"></script>
+</body>
+</html>
